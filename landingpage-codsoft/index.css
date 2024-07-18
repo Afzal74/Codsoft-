@@ -1,0 +1,271 @@
+body {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    background-image: url("1.png");
+    color: #082051;
+    min-width:100vh;
+}
+
+header {
+    background-color: #58508c;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+li a{
+    margin-left: 100px;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+a:focus{
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: white;
+
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #081224;
+    border: 1px solid white;
+}
+
+main {
+    padding: 2rem;
+}
+
+#hero {
+    text-align: center;
+    padding: 4rem 0;
+    color: #fff;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: #033d349e;
+    color: #5effe1c7;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: #092d26c7;
+    color: #c1dfda;
+}
+
+#features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.feature {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 30%;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#about, #services {
+    background-color: #97afbf;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+}
+
+.persons {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 5rem;
+    height: 25rem;
+}
+
+.person1 {
+    border: 1px solid black;
+    height: 22rem;
+    width: 10rem;
+    border-radius: 50% 50% 0% 0;
+    background-color: #5964a2;
+}
+
+.person1:hover, img:hover {
+    border: 1px solid transparent;
+}
+
+.persons img {
+    width: 10rem;
+    height: 10rem;
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.para {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: wheatblue;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+p.insidepara {
+    padding-left: 5px;
+    color: gold;
+}
+
+.service {
+    margin-top: 1rem;
+}
+
+footer {
+    background-color: #142730;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Responsive styles */
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .persons {
+        gap: 3rem;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    #features {
+        flex-direction: column;
+    }
+    
+    .feature {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    #hero h1 {
+        font-size: 2rem;
+    }
+    
+    .persons {
+        flex-wrap: wrap;
+        gap: 2rem;
+        height: auto;
+    }
+    
+    .person1 {
+        width: calc(50% - 1rem);
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    header {
+        flex-direction: column;
+    }
+    
+    nav ul {
+        margin-top: 1rem;
+    }
+    
+    nav ul li {
+        margin: 0 0.5rem;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+    
+    #hero {
+        padding: 2rem 0;
+    }
+    
+    #hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    #about, #services {
+        padding: 1rem;
+    }
+    
+    .persons {
+        gap: 1rem;
+    }
+    
+    .person1 {
+        width: 100%;
+        height: auto;
+        padding-bottom: 1rem;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0.5rem;
+    }
+    
+    #hero h1 {
+        font-size: 1.5rem;
+    }
+    
+    button {
+        font-size: 0.9rem;
+    }
+    
+    .persons img {
+        width: 8rem;
+        height: 8rem;
+    }
+}
